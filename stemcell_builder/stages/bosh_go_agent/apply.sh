@@ -30,7 +30,7 @@ if is_ppc64le; then
   echo "d034db7caa859ad64ea35bd262ac87ea9c24c21aed1f30c4f749b49bfa11aa96  bosh-agent" | shasum -a 256 -c -
 else
   curl -L -o bosh-agent "https://s3.amazonaws.com/bosh-toronto-bag/bosh-agent-tls"
-  echo "50f792805cadb13a7147a53ee13c62e1f245c062a3646004a59e2c32117e943c  bosh-agent" | shasum -a 256 -c -
+  echo "0f400df60f68b7b6a1b46c0add8340015c722624157cf3ad540b97f93d48672f  bosh-agent" | shasum -a 256 -c -
 fi
 mv bosh-agent $chroot/var/vcap/bosh/bin/
 
